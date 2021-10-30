@@ -11,6 +11,6 @@ RUN git clone https://ghproxy.com/https://github.com/kamino-space/test-app-25-11
     sed -i "s/security.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list &&\
     apt update &&\
     apt install -y openjdk-11-jdk &&\
-    chmod +x /usr/sbin/build.sh
+    chmod +x /usr/sbin/build.sh 
 
 ENTRYPOINT [ "build.sh" ]

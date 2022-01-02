@@ -1,6 +1,6 @@
 FROM androidsdk/android-25:latest
 
-WORKDIR /root/project
+WORKDIR /repo
 
 ADD build.sh /usr/sbin/
 

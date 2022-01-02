@@ -5,6 +5,7 @@ WORKDIR /repo
 ADD build.sh /usr/sbin/
 
 ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
+ENV REPO https://ghproxy.com/https://github.com/kamino-space/test-app-25-11.git
 
 RUN sed -i "s/archive.ubuntu.com/mirrors.tencent.com/g" /etc/apt/sources.list &&\
     sed -i "s/security.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list &&\
